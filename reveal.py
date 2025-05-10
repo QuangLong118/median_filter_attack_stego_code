@@ -5,9 +5,9 @@ def extract_lsb(stego_path):
     # Trích xuất tin\
     try:
         extracted_msg = lsb.reveal(stego_path)
-        print("Tin trích xuất: ", extracted_msg)
+        print("Extract information: ", extracted_msg)
     except:
-        print("Không thể trích xuất tin giấu")
+        print("Unable to extract hidden information")
 
 # input
 try:
@@ -16,4 +16,4 @@ try:
 
     extract_lsb(stego_path)
 except:
-    print("Ảnh không tồn tại")
+    print("Invalid!")
