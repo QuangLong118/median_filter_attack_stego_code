@@ -6,7 +6,7 @@ def median_filter(stego_input, blurred_output):
     img = cv2.imread(stego_input)
     blurred_img = cv2.medianBlur(img, 3)  # kernel size = 3
     cv2.imwrite(blurred_output, blurred_img)
-    print("[+] Đã làm mờ ảnh stego bằng Median blur.")
+    print("Blurred stego image with Gaussian blur.")
 
 # input
 try:
@@ -15,4 +15,4 @@ try:
     blur_path = sys.argv[2]
     median_filter(stego_path,blur_path)
 except :
-    print("Đầu vào không hợp lệ!")
+    print("Invalid!")
